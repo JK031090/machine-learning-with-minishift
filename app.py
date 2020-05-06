@@ -7,6 +7,8 @@ if not os.path.exists('mnist.h5'):
     import train
 
     train.start()
+    print('Training complete. Starting Server')
+    server.start()
 
 else:
     print('Model exists. Starting server')
