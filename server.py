@@ -7,7 +7,7 @@ application = Flask(__name__)
 
 stored_model = None
 
-@application.rote("/")
+@application.route("/")
 def hello():
     return render_template('index.html')
 
