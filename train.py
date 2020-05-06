@@ -10,7 +10,7 @@ def start():
 
     batch_size = 128
     num_classes = 10
-    epoch = 12
+    epochs = 12
 
     #input image dimensions
     img_rows, img_cols = 28, 28
