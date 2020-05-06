@@ -22,7 +22,7 @@ def ClassifyCharacter():
 
     return json.dumps({'prediction' : int(stored_model.predict_classes(reshapedData)[0])})
 
-de start():
+def start():
 global stored_model
 
 stored_model = keras.models.load_model('mnist.h5')
