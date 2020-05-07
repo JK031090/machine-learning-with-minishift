@@ -25,7 +25,7 @@ def ClassifyCharacter():
 def start():
     global stored_model
 
-    stored_model = keras.models.load_model('mnist.h5')
+    stored_model = keras.models.load_model('mnist.h5', compile = False)
     #print(dir(stored_model))
     stored_model._make_predict_function()
 
