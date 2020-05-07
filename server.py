@@ -26,6 +26,7 @@ def start():
     global stored_model
 
     stored_model = keras.models.load_model('mnist.h5')
-    stored_model._make_predict_fucntion()
+    #print(dir(stored_model))
+    stored_model._make_predict_function()
 
     application.run(host='0.0.0.0', port=8080)
